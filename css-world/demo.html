@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        /* 只需要对替换元素的boxsizing重置值 */
+        input,
+        textarea,
+        img,
+        video,
+        object {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .aaa {
+            content: url('1.jpg');
+        }
+
+        .test::before {
+            content: '\A';
+            white-space: pre;
+            /* white-space也必须设置 */
+        }
+
+        .content-test {
+            content: attr(data-title);
+        }
+
+        button {
+            padding: 0;
+        }
+
+        /* 我试验的感觉firefox下无效果 */
+        button::-moz-focus-inner {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .bbb {
+            border: 10px;
+            /* 无边框出现 */
+            border: red;
+            /* 无边框出现 */
+            border: solid;
+            /* 有边框出现 */
+            border-bottom: 0 none;
+
+        }
+
+        .demo {
+            line-height: 1.42858;
+            font-size: 14px;
+        }
+
+        .el {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .el-rows-2 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="aaa"><span class="test"></span>
+    <img src="1.jpg" />
+    <span class="test"></span>
+    <div data-title='this is a test' class="content-test"></div>
+    <button>按键</button>
+    <div class="bbb">
+        看看边框长啥样
+    </div>
+    <a href="#1">锚点跳转</a>
+    <a id='1'></a>
+    <div style="overflow:hidden;">
+        <img src="1.jpg" style="position:absolute" />
+    </div>
+    <div style="position:relative">
+        <div style="overflow:hidden;">
+            <img src="1.jpg" style="position:absolute" />
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .constr {
+            width: 70%;
+            margin: auto;
+            background-color: #f0f0f0;
+        }
+
+        .alignright {
+            height: 0;
+            text-align: right;
+            overflow: hidden;
+        }
+
+        .alignright:before {
+            content: "\2002";
+        }
+
+        .follow {
+            position: fixed;
+            bottom: 100px;
+            z-index: 1;
+        }
+
+        .follow>img {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="constr">
+        <ul class="codes col2">
+            <li class="code_li">
+                <div class="code_x">
+                    <h5>HTML：</h5>
+                    <pre name="code"
+                        class="DlHighlight html"><span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">div</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>constr<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+            <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">div</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>alignright<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">span</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>follow<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                    <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">img</span> <span class="builtin xml-attribute">src</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>circle.png<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                    <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">img</span> <span class="builtin xml-attribute">src</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>backtop.png<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">span</span><span class="paren xml-tagangle">&gt;</span>
+            <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">div</span><span class="paren xml-tagangle">&gt;</span>
+        <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">div</span><span class="paren xml-tagangle">&gt;</span></pre>
+                </div>
+            </li>
+            <li class="code_li">
+                <div class="code_x">
+                    <h5>CSS：</h5>
+                    <pre name="code" class="DlHighlight css"><span class="css-class"><span class="before">.</span>constr</span> <span class="paren css-block-open">{</span>
+            <span class="builtin css-declaration-kw">width<span class="after">:</span></span> <span class="css-length">80<span class="after">%</span></span>;
+            <span class="builtin css-declaration-kw">margin<span class="after">:</span></span> auto;
+            <span class="builtin css-declaration-kw">background-color<span class="after">:</span></span> <span class="css-color-spec"><span class="before">#</span>f0f3f9</span>;
+        <span class="paren css-block-close">}</span>
+        <span class="css-class"><span class="before">.</span>alignright</span> <span class="paren css-block-open">{</span>
+            <span class="builtin css-declaration-kw">height<span class="after">:</span></span> 0;
+            <span class="builtin css-declaration-kw">text-align<span class="after">:</span></span> right;
+            <span class="builtin css-declaration-kw">overflow<span class="after">:</span></span> hidden;
+        <span class="paren css-block-close">}</span>
+        <span class="css-class"><span class="before">.</span>alignright</span><span class="css-pseudo-class"><span class="before">:</span>before</span> <span class="paren css-block-open">{</span>
+            <span class="builtin css-declaration-kw">content<span class="after">:</span></span> <span class="string"><span class="before">"</span>\2002<span class="after">"</span></span>;
+        <span class="paren css-block-close">}</span>
+        
+        <span class="css-class"><span class="before">.</span>follow</span> <span class="paren css-block-open">{</span>
+            <span class="builtin css-declaration-kw">position<span class="after">:</span></span> fixed;
+            <span class="builtin css-declaration-kw">bottom<span class="after">:</span></span> <span class="css-length">100<span class="after">px</span></span>;
+            <span class="builtin css-declaration-kw">z-index<span class="after">:</span></span> 1;
+        <span class="paren css-block-close">}</span>
+        <span class="css-class"><span class="before">.</span>follow</span> &gt; img <span class="paren css-block-open">{</span>
+            <span class="builtin css-declaration-kw">display<span class="after">:</span></span> block;
+            <span class="builtin css-declaration-kw">margin<span class="after">:</span></span> <span class="css-length">10<span class="after">px</span></span>;
+        <span class="paren css-block-close">}</span></pre>
+                </div>
+            </li>
+        </ul>
+        <ul class="codes col2">
+                <li class="code_li">
+                    <div class="code_x">
+                        <h5>HTML：</h5>
+                        <pre name="code"
+                            class="DlHighlight html"><span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">div</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>constr<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">div</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>alignright<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                    <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">span</span> <span class="builtin xml-attribute">class</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>follow<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                        <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">img</span> <span class="builtin xml-attribute">src</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>circle.png<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                        <span class="paren xml-tagangle">&lt;</span><span class="keyword xml-tag xml-tag-open">img</span> <span class="builtin xml-attribute">src</span><span class="undefined"></span><span class="operator">=</span><span class="string"><span class="before">"</span>backtop.png<span class="after">"</span></span><span class="paren xml-tagangle">&gt;</span>
+                    <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">span</span><span class="paren xml-tagangle">&gt;</span>
+                <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">div</span><span class="paren xml-tagangle">&gt;</span>
+            <span class="paren xml-tagangle">&lt;/</span><span class="keyword xml-tag xml-tag-close">div</span><span class="paren xml-tagangle">&gt;</span></pre>
+                    </div>
+                </li>
+                <li class="code_li">
+                    <div class="code_x">
+                        <h5>CSS：</h5>
+                        <pre name="code" class="DlHighlight css"><span class="css-class"><span class="before">.</span>constr</span> <span class="paren css-block-open">{</span>
+                <span class="builtin css-declaration-kw">width<span class="after">:</span></span> <span class="css-length">80<span class="after">%</span></span>;
+                <span class="builtin css-declaration-kw">margin<span class="after">:</span></span> auto;
+                <span class="builtin css-declaration-kw">background-color<span class="after">:</span></span> <span class="css-color-spec"><span class="before">#</span>f0f3f9</span>;
+            <span class="paren css-block-close">}</span>
+            <span class="css-class"><span class="before">.</span>alignright</span> <span class="paren css-block-open">{</span>
+                <span class="builtin css-declaration-kw">height<span class="after">:</span></span> 0;
+                <span class="builtin css-declaration-kw">text-align<span class="after">:</span></span> right;
+                <span class="builtin css-declaration-kw">overflow<span class="after">:</span></span> hidden;
+            <span class="paren css-block-close">}</span>
+            <span class="css-class"><span class="before">.</span>alignright</span><span class="css-pseudo-class"><span class="before">:</span>before</span> <span class="paren css-block-open">{</span>
+                <span class="builtin css-declaration-kw">content<span class="after">:</span></span> <span class="string"><span class="before">"</span>\2002<span class="after">"</span></span>;
+            <span class="paren css-block-close">}</span>
+            
+            <span class="css-class"><span class="before">.</span>follow</span> <span class="paren css-block-open">{</span>
+                <span class="builtin css-declaration-kw">position<span class="after">:</span></span> fixed;
+                <span class="builtin css-declaration-kw">bottom<span class="after">:</span></span> <span class="css-length">100<span class="after">px</span></span>;
+                <span class="builtin css-declaration-kw">z-index<span class="after">:</span></span> 1;
+            <span class="paren css-block-close">}</span>
+            <span class="css-class"><span class="before">.</span>follow</span> &gt; img <span class="paren css-block-open">{</span>
+                <span class="builtin css-declaration-kw">display<span class="after">:</span></span> block;
+                <span class="builtin css-declaration-kw">margin<span class="after">:</span></span> <span class="css-length">10<span class="after">px</span></span>;
+            <span class="paren css-block-close">}</span></pre>
+                    </div>
+                </li>
+            </ul>
+
+        <div class="alignright">
+            <span class="follow">
+                <img src="circle.png">
+                <img src="backtop.png">
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

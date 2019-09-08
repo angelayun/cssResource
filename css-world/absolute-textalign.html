@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            width: 300px;
+            height: 120px;
+            background-color: #eef0f6;
+            text-align: center;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        /* IE兼容处理 */
+        .compa {
+            font-size: .1px;
+            font-size: -webkit-calc(1px - 1px);
+        }
+
+        .compa:before {
+            content: "\2002";
+            /* 这里是空格的意思 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- absolute元素的display计算值是块状的，text-align是不会起作用的，这里之所以会产生位置变化，本质上是幽灵空白节点和无依赖绝对定位元素共同作用的结果 -->
+    <h4>全兼容版本</h4>
+    <p class="compa"><img src="1.jpg"></p>
+</body>
+
+</html>
